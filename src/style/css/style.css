@@ -108,6 +108,74 @@ table {
   line-height: 26px;
 }
 
+.l-footer {
+  background-color: #4D592C;
+  font-family: "Jost", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 26px;
+  color: #ffffff;
+}
+.l-footer__wrap {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 100px 0px;
+}
+.l-footer__wrap .footer-logo {
+  width: 280px;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  margin-right: 50px;
+}
+.l-footer__wrap .footer-logo__logo {
+  width: 224px;
+}
+.l-footer__wrap .footer-logo p {
+  margin-bottom: 10px;
+}
+.l-footer__wrap .footer-logo__icons {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 20px;
+}
+.l-footer__wrap .footer-link {
+  display: flex;
+  justify-content: flex-end;
+  gap: 100px;
+}
+.l-footer__wrap .footer-link__bloc {
+  display: flex;
+  flex-direction: column;
+  justify-self: center;
+  align-items: start;
+  gap: 20px;
+}
+.l-footer__wrap .footer-link__bloc li a {
+  color: #ffffff;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+}
+.l-footer__wrap .footer-link__bloc h4 {
+  font-size: 24px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  line-height: 34px;
+  margin-bottom: 10px;
+}
+.l-footer address {
+  padding: 30px;
+  text-align: center;
+  font-family: "Jost", sans-serif;
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+}
+
 .btn {
   background-color: #C5CD64;
   font-family: "Jost", sans-serif;
