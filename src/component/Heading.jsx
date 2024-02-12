@@ -1,7 +1,19 @@
 import React from 'react'
+import { BrowserRouter, Link, Route, Routes, useNavigate } from 'react-router-dom'
 
 const Heading = () => {
+    const usenavigate = useNavigate();
+
+    const loginhandler = () => {
+        usenavigate('/Login');
+    }
+    const signuphandler = (e) => {
+        usenavigate('/Signup');
+    }
+
     return (
+        <>
+        
         <div className='l-header l-header__top'>
             <div className='l-wrap-inner'>
                 <div className="top-bloc">
@@ -11,12 +23,13 @@ const Heading = () => {
                     <div className="address-bloc">
                         <p>Email:  metro@dreamspace.com</p>
                         <p>Call Us: +95 9766189813</p>
-                        <button className='btn btn--signin'>Sign In</button>
-                        <button className='btn btn--signup'>Sign Up</button>
+                        <button className='btn btn--signin' onClick={loginhandler}>Sign In</button>
+                        <button className='btn btn--signup' onClick={signuphandler}>Sign Up</button>
                     </div>
                 </div>
             </div>
         </div>
+        </>
     )
 }
 

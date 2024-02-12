@@ -9,6 +9,8 @@ import About from './pages/About'
 import Header from './component/Header'
 import Footer from './component/Footer'
 import PaymentService from './pages/PaymentService'
+import Login from './pages/Login';
+import Signup from './pages/Signup';
 
 function App() {
 
@@ -24,6 +26,8 @@ function App() {
         <Route path='/Appointment' element={<Appointment />}/>
         <Route path='/About' element={<About />}/>
         <Route path='/Contact' element={<Contact />}/>
+        <Route path='/Login' element={<Login />}/>
+        <Route path='/Signup' element={<Signup />}/>
       </Routes>
       <Footer/>
     </BrowserRouter>

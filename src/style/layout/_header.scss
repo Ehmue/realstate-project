@@ -1,16 +1,22 @@
 .l-header {
-    p {
-        font-family: $font-poppins;
-        color: $colorwhite;
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 26px;
-    }
+    position: sticky;
+
+    
 
     &__top {
+        position: relative;
         width: 100%;
+        height: 90px;
         //margin: 0 auto;
         background-color: $colormain;
+
+        p {
+            font-family: $font-poppins;
+            color: $colorwhite;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 26px;
+        }
 
         .top-bloc {
             width: 100%;
@@ -34,6 +40,7 @@
     }
 
     &__nav {
+        position: relative;
         width: 100%;
         height: 90px;
         background-color: $colorgreen;
@@ -59,5 +66,10 @@
             }
         }
 
+    }
+}
+@media screen and (min-width: 1440px) {
+    .l-header{
+        width: 100%;
     }
 }
